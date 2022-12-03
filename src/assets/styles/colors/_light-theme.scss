@@ -1,0 +1,14 @@
+@mixin light-theme {
+  --primary-color: rgb(240, 242, 244);
+  --primary-color-contrast: rgb(15, 15, 16);
+  --secondary-color: rgb(255, 255, 255);
+  --title-color: rgb(30, 32, 34);
+  --text-color: rgb(0, 0, 0);
+  --label-color: rgb(140, 152, 164);
+  --border-color: rgb(189, 197, 209);
+  --placeholder-color: rgb(189, 197, 209);
+  --green-color: rgb(95, 187, 70);
+  --blue-color: rgb(95, 187, 70);
+  --orange-color: rgb(255, 193, 7);
+  --red-color: rgb(222, 68, 55);
+}

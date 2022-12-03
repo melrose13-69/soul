@@ -1,0 +1,29 @@
+@import "default-theme";
+@import "light-theme";
+@import "dark-theme";
+
+:root {
+  body {
+    @include default-theme;
+
+    &[data-theme="light"] {
+      @include light-theme;
+    }
+
+    &[data-theme="dark"] {
+      @include dark-theme;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    &:not(&:has([data-theme="dark"])) {
+      @include light-theme;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:not(&:has([data-theme="light"])) {
+      @include dark-theme;
+    }
+  }
+}

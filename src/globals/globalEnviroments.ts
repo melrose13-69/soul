@@ -1,0 +1,1 @@
+export const shadowScope: ShadowRootMode = import.meta.env.MODE === 'development' ? 'open' : 'closed'

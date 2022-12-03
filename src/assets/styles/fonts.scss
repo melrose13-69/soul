@@ -1,0 +1,62 @@
+@font-face {
+  font-family: icomoon;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/icomoon.eot?gl55yv');
+  src: url('../fonts/icomoon.eot?gl55yv#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gl55yv') format('truetype'),
+    url('../fonts/icomoon.woff?gl55yv') format('woff'),
+    url('../fonts/icomoon.svg?gl55yv#icomoon') format('svg');
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: icomoon !important;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  speak: never;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil::before {
+  content: "\e905";
+}
+
+.icon-bin2::before {
+  content: "\e9ad";
+}
+
+.icon-flag::before {
+  content: "\e9cc";
+}
+
+.icon-eye::before {
+  content: "\e9ce";
+}
+
+.icon-eye-blocked::before {
+  content: "\e9d1";
+}
+
+.icon-plus::before {
+  content: "\ea0a";
+}
+
+.icon-paragraph-center::before {
+  content: "\ea78";
+}
+
+.icon-sun-stroke::before {
+  content: "\e900";
+}
+
+.icon-sun-fill::before {
+  content: "\e901";
+}

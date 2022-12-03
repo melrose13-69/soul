@@ -1,0 +1,15 @@
+@mixin dark-theme {
+  --primary-color: rgb(15, 15, 16);
+  --primary-color-contrast: rgb(240, 242, 244);
+  --secondary-color: rgb(30, 32, 34);
+  --title-color: rgb(248, 249, 250);
+  --text-color: rgb(248, 249, 250);
+  --label-color: rgb(189, 197, 209);
+  --border-color: rgb(151, 164, 175);
+  --placeholder-color: rgb(151, 164, 175);
+  --green-color: rgb(106, 214, 77);
+  --blue-color: rgb(67, 126, 208);
+  --orange-color: rgb(255, 196, 22);
+  --red-color: rgb(236, 73, 59);
+}
+
