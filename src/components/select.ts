@@ -1,24 +1,28 @@
 import { ObservedInputAttributes } from '../types/compoents'
-import { createInputTemplate } from './templates'
+import { createSelectTemplate } from './templates'
 export class InputComponent extends HTMLElement {
   public wrapper: HTMLDivElement
-  public input: HTMLInputElement
+  public select: HTMLDivElement
+  public field: HTMLDivElement
+  public options: HTMLDivElement
   public label: HTMLLabelElement
   public span: HTMLSpanElement
   constructor () {
     super()
 
-    const { wrapper, input, label, span, id } = createInputTemplate()
+    const { wrapper, select, field, options, label, span, id } = createSelectTemplate()
 
     this.wrapper = wrapper
-    this.input = input
+    this.select = select
+    this.field = field
     this.label = label
+    this.options = options
     this.span = span
 
     const custom = {
       wrapper: this.wrapper,
       label: this.label,
-      input: this.input,
+      select: this.select,
       span: this.span,
       id
     }
@@ -33,7 +37,7 @@ export class InputComponent extends HTMLElement {
     const placeholder = this.getAttribute('placeholder-text')
 
     this.label.textContent = label
-    this.input.placeholder = placeholder || label || ''
+    this.select.textContent = placeholder || label || ''
   }
 
   attributeChangedCallback (name: ObservedInputAttributes, oldValue: string, newValue: string) {
@@ -44,7 +48,7 @@ export class InputComponent extends HTMLElement {
         this.span.textContent = newValue
         break
       case ObservedInputAttributes.VALUE:
-        this.input.value = newValue
+        this.select.textContent = newValue
         break
       default: return
     }

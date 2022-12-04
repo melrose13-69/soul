@@ -8,17 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,200&display=swap"
           rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/src/assets/styles/index.scss">
     <title>SOUL</title>
 </head>
 <body data-theme="light">
 <div id="app">
     <div class="wrapper">
-        <div class="content">
-            <header class="header">
-                <span class="header__logo">Place for logo</span>
-                <button class="header__theme_toggle" id="change-theme"></button>
-            </header>
-        </div>
+        <header class="header">
+            <span class="header__logo">Place for logo</span>
+            <button class="header__theme_toggle" id="change-theme"></button>
+        </header>
+        <main class="main">
+            <section>
+                <h2 class="title list-title">
+                    <span class="title__text">Specifications</span>
+                    <span class="icon-paragraph-center"></span>
+                </h2>
+                <div class="list"></div>
+            </section>
+            <section>
+                <h2 class="title form-title">
+                    <span class="title__text">Create specification</span>
+                    <span class="icon-flag"></span>
+                </h2>
+                <div class="form">
+                    <input-component class="input-component" label-text="Test label"></input-component>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
     </div>
 </div>
 

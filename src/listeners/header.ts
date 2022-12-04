@@ -13,8 +13,7 @@ const themeListener = () => {
 
     theme.renameBodyClass()
 
-    button.removeClasses(oldTheme)
-    button.addClasses(theme.theme)
+    button.removeClasses(oldTheme).addClasses(theme.theme)
   })
 }
 

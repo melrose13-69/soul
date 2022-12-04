@@ -1,4 +1,3 @@
-import './assets/styles/index.scss'
 import defineComponents from './components'
 import defineExtensions from './globals/extensions'
 import initListeners from './listeners'
